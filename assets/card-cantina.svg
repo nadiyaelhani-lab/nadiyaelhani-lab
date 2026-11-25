@@ -1,81 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="580" height="230" role="img" aria-label="Cantina Weekly Menu Planner Project Card">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B1325"/>
-      <stop offset="100%" stop-color="#060913"/>
-    </linearGradient>
-    <radialGradient id="glowSky" cx="85%" cy="18%" r="55%">
-      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.28"/>
-      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="strokeSky" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.65"/>
-      <stop offset="50%" stop-color="#34D399" stop-opacity="0.24"/>
-      <stop offset="100%" stop-color="#334155" stop-opacity="0.4"/>
-    </linearGradient>
-    <linearGradient id="budgetBar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22C55E"/>
-      <stop offset="100%" stop-color="#38BDF8"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 215" width="580" height="215" role="img" aria-label="Cantina Weekly Menu Planner Project Card">
   <style><![CDATA[
+    .serif { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
-    @keyframes fillMeter { 0% { width: 24px; } 50% { width: 122px; } 100% { width: 108px; } }
-    .live { animation: pulse 1.8s ease-in-out infinite; }
-    .meter { animation: fillMeter 3.4s ease-in-out infinite; }
   ]]></style>
 
-  <rect x="1.5" y="1.5" width="577" height="227" rx="18" fill="url(#bg)" stroke="url(#strokeSky)" stroke-width="1.5"/>
-  <rect x="2" y="2" width="576" height="226" rx="18" fill="url(#glowSky)"/>
+  <rect x="1" y="1" width="578" height="213" rx="14" fill="#171411" stroke="#2E2924" stroke-width="1.2"/>
+  <rect x="24" y="1" width="56" height="3" rx="1.5" fill="#6B8F71"/>
 
-  <!-- Status Badge -->
-  <rect x="24" y="22" width="128" height="24" rx="12" fill="#052E16" stroke="#22C55E" stroke-opacity="0.6"/>
-  <circle class="live" cx="38" cy="34" r="3.5" fill="#4ADE80"/>
-  <text x="48" y="38" class="mono" font-size="10.5" fill="#86EFAC" font-weight="600">LIVE · VERCEL</text>
+  <!-- Top Row -->
+  <text x="24" y="34" class="mono" font-size="10.5" fill="#A89F91" letter-spacing="1.2">03 / MENU &amp; BUDGET PLANNER</text>
+  <rect x="440" y="18" width="116" height="22" rx="11" fill="#1F2921" stroke="#6B8F71" stroke-opacity="0.55"/>
+  <circle cx="454" cy="29" r="3" fill="#6B8F71"/>
+  <text x="464" y="33" class="mono" font-size="10" fill="#B6D1BA">LIVE · VERCEL</text>
 
-  <text x="556" y="38" text-anchor="end" class="mono" font-size="11" fill="#38BDF8">WEB APP ↗</text>
+  <!-- Title & Summary -->
+  <text x="24" y="72" class="serif" font-size="22" font-weight="700" fill="#F3EDE4">Cantina — Menu Planner</text>
+  <text x="24" y="98" class="sans" font-size="12.5" fill="#A89F91">YouCode canteen planner with modal</text>
+  <text x="24" y="117" class="sans" font-size="12.5" fill="#A89F91">recipes, Regex validation &amp; 50 DH cap.</text>
 
-  <!-- Title & Desc -->
-  <text x="24" y="78" class="sans" font-size="22" font-weight="800" fill="#FFFFFF">Cantina — Menu Planner</text>
-  <text x="24" y="103" class="sans" font-size="12.5" fill="#94A3B8">YouCode canteen app with modal recipes,</text>
-  <text x="24" y="122" class="sans" font-size="12.5" fill="#94A3B8">live Regex validation &amp; 50 DH/day cap.</text>
-
-  <!-- Mini Animated Budget Planner Widget -->
-  <g transform="translate(382, 54)">
-    <rect x="0" y="0" width="174" height="104" rx="12" fill="#0B1120" stroke="#475569" stroke-opacity="0.5"/>
-    <text x="12" y="20" class="mono" font-size="8.5" fill="#38BDF8">WEEKLY BUDGET CAP</text>
-    <text x="12" y="38" class="sans" font-size="15" font-weight="800" fill="#FFFFFF">50 DH <tspan class="mono" font-size="9" fill="#94A3B8">/ day</tspan></text>
-    <!-- Animated Gauge -->
-    <rect x="12" y="48" width="150" height="8" rx="4" fill="#1E293B"/>
-    <rect class="meter" x="12" y="48" width="108" height="8" rx="4" fill="url(#budgetBar)"/>
-    <!-- Day pills -->
-    <rect x="12" y="68" width="26" height="22" rx="5" fill="#064E3B"/>
-    <text x="25" y="83" text-anchor="middle" class="mono" font-size="8.5" fill="#A7F3D0">MON</text>
-    <rect x="43" y="68" width="26" height="22" rx="5" fill="#064E3B"/>
-    <text x="56" y="83" text-anchor="middle" class="mono" font-size="8.5" fill="#A7F3D0">TUE</text>
-    <rect x="74" y="68" width="26" height="22" rx="5" fill="#1E3A8A"/>
-    <text x="87" y="83" text-anchor="middle" class="mono" font-size="8.5" fill="#BFDBFE">WED</text>
-    <rect x="105" y="68" width="26" height="22" rx="5" fill="#1E293B"/>
-    <text x="118" y="83" text-anchor="middle" class="mono" font-size="8.5" fill="#94A3B8">THU</text>
-    <rect x="136" y="68" width="26" height="22" rx="5" fill="#1E293B"/>
-    <text x="149" y="83" text-anchor="middle" class="mono" font-size="8.5" fill="#94A3B8">FRI</text>
+  <!-- Architectural Wireframe Diagram (Right) -->
+  <g transform="translate(384, 54)">
+    <rect x="0" y="0" width="172" height="96" rx="10" fill="#1C1916" stroke="#2E2924"/>
+    <text x="12" y="21" class="mono" font-size="8.5" fill="#A89F91">DAILY BUDGET CAP</text>
+    <text x="12" y="38" class="sans" font-size="14" font-weight="700" fill="#F3EDE4">50 DH <tspan class="mono" font-size="8.5" fill="#78716C">/ day</tspan></text>
+    <rect x="12" y="48" width="148" height="6" rx="3" fill="#26221E"/>
+    <rect x="12" y="48" width="106" height="6" rx="3" fill="#6B8F71"/>
+    <rect x="12" y="64" width="25" height="20" rx="4" fill="#1F2921" stroke="#6B8F71" stroke-opacity="0.4"/>
+    <text x="24.5" y="77" text-anchor="middle" class="mono" font-size="8" fill="#B6D1BA">M</text>
+    <rect x="42" y="64" width="25" height="20" rx="4" fill="#1F2921" stroke="#6B8F71" stroke-opacity="0.4"/>
+    <text x="54.5" y="77" text-anchor="middle" class="mono" font-size="8" fill="#B6D1BA">T</text>
+    <rect x="72" y="64" width="25" height="20" rx="4" fill="#29211B" stroke="#D4A373" stroke-opacity="0.5"/>
+    <text x="84.5" y="77" text-anchor="middle" class="mono" font-size="8" fill="#D4A373">W</text>
+    <rect x="102" y="64" width="25" height="20" rx="4" fill="#141210" stroke="#2E2924"/>
+    <text x="114.5" y="77" text-anchor="middle" class="mono" font-size="8" fill="#78716C">T</text>
+    <rect x="132" y="64" width="25" height="20" rx="4" fill="#141210" stroke="#2E2924"/>
+    <text x="144.5" y="77" text-anchor="middle" class="mono" font-size="8" fill="#78716C">F</text>
   </g>
 
-  <!-- Tech Pills -->
-  <line x1="24" y1="172" x2="556" y2="172" stroke="#1E293B" stroke-width="1"/>
-  <rect x="24" y="186" width="96" height="24" rx="7" fill="#2E1065" stroke="#8B5CF6" stroke-opacity="0.5"/>
-  <text x="72" y="202" text-anchor="middle" class="mono" font-size="10.5" fill="#DDD6FE">Bootstrap 5</text>
-
-  <rect x="128" y="186" width="90" height="24" rx="7" fill="#1E293B" stroke="#FACC15" stroke-opacity="0.4"/>
-  <text x="173" y="202" text-anchor="middle" class="mono" font-size="10.5" fill="#FEF08A">Vanilla JS</text>
-
-  <rect x="226" y="186" width="76" height="24" rx="7" fill="#083344" stroke="#38BDF8" stroke-opacity="0.5"/>
-  <text x="264" y="202" text-anchor="middle" class="mono" font-size="10.5" fill="#BAE6FD">Regex</text>
-
-  <rect x="310" y="186" width="76" height="24" rx="7" fill="#0F172A" stroke="#334155"/>
-  <text x="348" y="202" text-anchor="middle" class="mono" font-size="10.5" fill="#CBD5E1">Vercel</text>
-
-  <text x="556" y="202" text-anchor="end" class="mono" font-size="10.5" fill="#94A3B8">Click to explore →</text>
+  <!-- Footer Strip -->
+  <line x1="24" y1="166" x2="556" y2="166" stroke="#2E2924" stroke-width="1"/>
+  <text x="24" y="191" class="mono" font-size="11" fill="#D4A373">Bootstrap 5  ·  Vanilla JS  ·  Regex</text>
+  <text x="556" y="191" text-anchor="end" class="mono" font-size="11" fill="#A89F91">Repository →</text>
 </svg>

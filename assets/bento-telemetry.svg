@@ -1,232 +1,133 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="42 Firenze Telemetry and Engineering Skill Matrix">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="42 Firenze Competency Telemetry and Progression">
   <defs>
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0A1020"/>
-      <stop offset="100%" stop-color="#060A14"/>
+    <linearGradient id="areaSand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C96A4B" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#C96A4B" stop-opacity="0.0"/>
     </linearGradient>
-
-    <linearGradient id="cardStroke" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.40"/>
-      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#334155" stop-opacity="0.35"/>
-    </linearGradient>
-
-    <linearGradient id="barCyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0284C7"/>
-      <stop offset="100%" stop-color="#38BDF8"/>
-    </linearGradient>
-
-    <linearGradient id="barIndigo" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4F46E5"/>
-      <stop offset="100%" stop-color="#A855F7"/>
-    </linearGradient>
-
-    <linearGradient id="barEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#059669"/>
-      <stop offset="100%" stop-color="#34D399"/>
-    </linearGradient>
-
-    <linearGradient id="barAmber" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#D97706"/>
-      <stop offset="100%" stop-color="#FB7185"/>
-    </linearGradient>
-
-    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.32"/>
-      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.0"/>
-    </linearGradient>
-
-    <linearGradient id="curveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="65%" stop-color="#818CF8"/>
-      <stop offset="100%" stop-color="#34D399"/>
-    </linearGradient>
-
-    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
-      <feGaussianBlur stdDeviation="3.5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
   <style><![CDATA[
+    .serif { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace; }
-
-    @keyframes growBar {
-      0% { transform: scaleX(0); }
-      100% { transform: scaleX(1); }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    @keyframes barReveal {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
     }
-    @keyframes drawCurve {
-      0% { stroke-dashoffset: 620; }
-      100% { stroke-dashoffset: 0; }
+    @keyframes lineDraw {
+      from { stroke-dashoffset: 600; }
+      to { stroke-dashoffset: 0; }
     }
-    @keyframes pulseNode {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.45; }
-    }
-
-    .bar-anim-1 { transform-origin: 36px 0px; animation: growBar 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
-    .bar-anim-2 { transform-origin: 36px 0px; animation: growBar 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
-    .bar-anim-3 { transform-origin: 36px 0px; animation: growBar 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
-    .bar-anim-4 { transform-origin: 36px 0px; animation: growBar 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
-    .curve-line { stroke-dasharray: 620; stroke-dashoffset: 0; animation: drawCurve 2.2s ease-out forwards; }
-    .node-glow { animation: pulseNode 2.4s ease-in-out infinite; }
+    .b1 { transform-origin: 36px 0; animation: barReveal 1.0s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    .b2 { transform-origin: 36px 0; animation: barReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    .b3 { transform-origin: 36px 0; animation: barReveal 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    .b4 { transform-origin: 36px 0; animation: barReveal 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    .curve { stroke-dasharray: 600; animation: lineDraw 1.8s ease-out forwards; }
   ]]></style>
 
-  <!-- LEFT BENTO CARD: 42 Firenze Skill Telemetry -->
+  <!-- LEFT PANEL: 42 Firenze Competency Profile -->
   <g>
-    <rect x="2" y="2" width="584" height="336" rx="20" fill="url(#cardBg)" stroke="url(#cardStroke)" stroke-width="1.4"/>
+    <rect x="1" y="1" width="586" height="328" rx="14" fill="#171411" stroke="#2E2924" stroke-width="1.2"/>
 
-    <!-- Card Header -->
-    <text x="36" y="38" class="mono" font-size="11" fill="#38BDF8" letter-spacing="1.6" font-weight="600">42 FIRENZE · INTRA TELEMETRY</text>
-    <text x="36" y="62" class="sans" font-size="20" fill="#FFFFFF" font-weight="700">Core Engineering Skills</text>
+    <text x="36" y="38" class="mono" font-size="10.5" fill="#C96A4B" letter-spacing="1.6">42 FIRENZE · COMPETENCY INDEX</text>
+    <text x="36" y="64" class="serif" font-size="21" font-weight="700" fill="#F3EDE4">Verified Engineering Metrics</text>
+    <text x="552" y="38" text-anchor="end" class="mono" font-size="10.5" fill="#78716C">ID: nael-han</text>
 
-    <rect x="442" y="24" width="114" height="24" rx="12" fill="#1E1B4B" stroke="#6366F1" stroke-opacity="0.6"/>
-    <text x="499" y="40" text-anchor="middle" class="mono" font-size="10.5" fill="#C7D2FE" font-weight="600">nael-han</text>
+    <line x1="36" y1="82" x2="552" y2="82" stroke="#2E2924" stroke-width="1"/>
 
-    <line x1="36" y1="78" x2="556" y2="78" stroke="#1E293B" stroke-width="1"/>
+    <!-- Row 1: Unix 5.25 / 6.0 -> 87.5% of 516 = 451px -->
+    <text x="36" y="110" class="sans" font-size="13" font-weight="600" fill="#E5DDD0">Unix &amp; Shell Environment</text>
+    <text x="552" y="110" text-anchor="end" class="mono" font-size="12.5" font-weight="700" fill="#D4A373">5.25</text>
+    <rect x="36" y="119" width="516" height="7" rx="3.5" fill="#26221E"/>
+    <rect class="b1" x="36" y="119" width="451" height="7" rx="3.5" fill="#C96A4B"/>
 
-    <!-- Bar 1: Unix 5.25 (max visual scale 6.0 -> 87.5% of 520 = 455px) -->
-    <text x="36" y="106" class="sans" font-size="13.5" fill="#E2E8F0" font-weight="600">Unix &amp; Shell Systems</text>
-    <text x="556" y="106" text-anchor="end" class="mono" font-size="13" fill="#38BDF8" font-weight="700">LVL 5.25</text>
-    <rect x="36" y="114" width="520" height="10" rx="5" fill="#1E293B"/>
-    <rect class="bar-anim-1" x="36" y="114" width="455" height="10" rx="5" fill="url(#barCyan)" filter="url(#glow)"/>
+    <!-- Row 2: Algorithms 3.80 / 6.0 -> 63.3% = 327px -->
+    <text x="36" y="156" class="sans" font-size="13" font-weight="600" fill="#E5DDD0">Algorithms &amp; Problem Solving</text>
+    <text x="552" y="156" text-anchor="end" class="mono" font-size="12.5" font-weight="700" fill="#D4A373">3.80</text>
+    <rect x="36" y="165" width="516" height="7" rx="3.5" fill="#26221E"/>
+    <rect class="b2" x="36" y="165" width="327" height="7" rx="3.5" fill="#D4A373"/>
 
-    <!-- Bar 2: Algorithms & AI 3.80 (63.3% -> 329px) -->
-    <text x="36" y="152" class="sans" font-size="13.5" fill="#E2E8F0" font-weight="600">Algorithms &amp; Problem Solving</text>
-    <text x="556" y="152" text-anchor="end" class="mono" font-size="13" fill="#C084FC" font-weight="700">LVL 3.80</text>
-    <rect x="36" y="160" width="520" height="10" rx="5" fill="#1E293B"/>
-    <rect class="bar-anim-2" x="36" y="160" width="329" height="10" rx="5" fill="url(#barIndigo)" filter="url(#glow)"/>
+    <!-- Row 3: Rigor 3.00 / 6.0 -> 50% = 258px -->
+    <text x="36" y="202" class="sans" font-size="13" font-weight="600" fill="#E5DDD0">Rigor &amp; Specification Discipline</text>
+    <text x="552" y="202" text-anchor="end" class="mono" font-size="12.5" font-weight="700" fill="#6B8F71">3.00</text>
+    <rect x="36" y="211" width="516" height="7" rx="3.5" fill="#26221E"/>
+    <rect class="b3" x="36" y="211" width="258" height="7" rx="3.5" fill="#6B8F71"/>
 
-    <!-- Bar 3: Rigor 3.00 (50% -> 260px) -->
-    <text x="36" y="198" class="sans" font-size="13.5" fill="#E2E8F0" font-weight="600">Rigor &amp; Code Quality</text>
-    <text x="556" y="198" text-anchor="end" class="mono" font-size="13" fill="#34D399" font-weight="700">LVL 3.00</text>
-    <rect x="36" y="206" width="520" height="10" rx="5" fill="#1E293B"/>
-    <rect class="bar-anim-3" x="36" y="206" width="260" height="10" rx="5" fill="url(#barEmerald)" filter="url(#glow)"/>
+    <!-- Row 4: Adaptation 2.17 / 6.0 -> 36% = 186px -->
+    <text x="36" y="248" class="sans" font-size="13" font-weight="600" fill="#E5DDD0">Adaptation &amp; Creativity</text>
+    <text x="552" y="248" text-anchor="end" class="mono" font-size="12.5" font-weight="700" fill="#A89F91">2.17</text>
+    <rect x="36" y="257" width="516" height="7" rx="3.5" fill="#26221E"/>
+    <rect class="b4" x="36" y="257" width="186" height="7" rx="3.5" fill="#9C7A54"/>
 
-    <!-- Bar 4: Adaptation 2.17 (36% -> 188px) -->
-    <text x="36" y="244" class="sans" font-size="13.5" fill="#E2E8F0" font-weight="600">Adaptation &amp; Creativity</text>
-    <text x="556" y="244" text-anchor="end" class="mono" font-size="13" fill="#FDA4AF" font-weight="700">LVL 2.17</text>
-    <rect x="36" y="252" width="520" height="10" rx="5" fill="#1E293B"/>
-    <rect class="bar-anim-4" x="36" y="252" width="188" height="10" rx="5" fill="url(#barAmber)" filter="url(#glow)"/>
-
-    <!-- Bottom Achievement Chips -->
-    <rect x="36" y="284" width="140" height="30" rx="9" fill="#0F172A" stroke="#334155"/>
-    <text x="106" y="303" text-anchor="middle" class="mono" font-size="11" fill="#86EFAC">✓ 9/14 Validated</text>
-
-    <rect x="188" y="284" width="128" height="30" rx="9" fill="#0F172A" stroke="#334155"/>
-    <text x="252" y="303" text-anchor="middle" class="mono" font-size="11" fill="#38BDF8">✓ 8 Peer Evals</text>
-
-    <rect x="328" y="284" width="112" height="30" rx="9" fill="#0F172A" stroke="#334155"/>
-    <text x="384" y="303" text-anchor="middle" class="mono" font-size="11" fill="#FDE047">★ 3-Streak</text>
-
-    <rect x="452" y="284" width="104" height="30" rx="9" fill="#1E1B4B" stroke="#818CF8" stroke-opacity="0.7"/>
-    <text x="504" y="303" text-anchor="middle" class="mono" font-size="11" fill="#E0E7FF" font-weight="600">◉ Libft</text>
+    <!-- Summary Strip -->
+    <line x1="36" y1="286" x2="552" y2="286" stroke="#2E2924" stroke-width="1"/>
+    <text x="36" y="308" class="mono" font-size="11" fill="#A89F91">9/14 modules passed   ·   8 peer evaluations   ·   3-project validation streak</text>
   </g>
 
-  <!-- RIGHT BENTO CARD: C Piscine Mastery Curve + Tech Matrix -->
+  <!-- RIGHT PANEL: TrackPulse C Piscine Progression & Technical Stack -->
   <g>
-    <rect x="614" y="2" width="584" height="336" rx="20" fill="url(#cardBg)" stroke="url(#cardStroke)" stroke-width="1.4"/>
+    <rect x="613" y="1" width="586" height="328" rx="14" fill="#171411" stroke="#2E2924" stroke-width="1.2"/>
 
-    <text x="648" y="38" class="mono" font-size="11" fill="#A855F7" letter-spacing="1.6" font-weight="600">MASTERY TRAJECTORY · JUL → NOV 2026</text>
-    <text x="648" y="62" class="sans" font-size="20" fill="#FFFFFF" font-weight="700">C Piscine Progression &amp; Stack</text>
+    <text x="648" y="38" class="mono" font-size="10.5" fill="#6B8F71" letter-spacing="1.6">PROGRESSION CURVE · JUL – AUG 2026</text>
+    <text x="648" y="64" class="serif" font-size="21" font-weight="700" fill="#F3EDE4">C Piscine Mastery &amp; Stack</text>
+    <text x="1164" y="38" text-anchor="end" class="mono" font-size="10.5" fill="#D4A373">PEAK 85%</text>
 
-    <rect x="1050" y="24" width="118" height="24" rx="12" fill="#052E16" stroke="#16A34A" stroke-opacity="0.6"/>
-    <text x="1109" y="40" text-anchor="middle" class="mono" font-size="10.5" fill="#86EFAC" font-weight="600">PEAK 85%</text>
+    <line x1="648" y1="82" x2="1164" y2="82" stroke="#2E2924" stroke-width="1"/>
 
-    <line x1="648" y1="78" x2="1168" y2="78" stroke="#1E293B" stroke-width="1"/>
+    <!-- Editorial Gridlines (y=106 is 100%, y=144 is 50%, y=182 is 0%) -->
+    <line x1="680" y1="106" x2="1156" y2="106" stroke="#2E2924" stroke-dasharray="2,4" stroke-width="1"/>
+    <line x1="680" y1="144" x2="1156" y2="144" stroke="#2E2924" stroke-dasharray="2,4" stroke-width="1"/>
+    <line x1="680" y1="182" x2="1156" y2="182" stroke="#2E2924" stroke-width="1"/>
 
-    <!-- Chart Gridlines (y: 100=100%, 190=0%) -->
-    <line x1="680" y1="104" x2="1156" y2="104" stroke="#1E293B" stroke-dasharray="3,4" stroke-width="1"/>
-    <line x1="680" y1="146" x2="1156" y2="146" stroke="#1E293B" stroke-dasharray="3,4" stroke-width="1"/>
-    <line x1="680" y1="188" x2="1156" y2="188" stroke="#1E293B" stroke-width="1"/>
+    <text x="670" y="110" text-anchor="end" class="mono" font-size="9.5" fill="#78716C">100</text>
+    <text x="670" y="148" text-anchor="end" class="mono" font-size="9.5" fill="#78716C">50</text>
+    <text x="670" y="185" text-anchor="end" class="mono" font-size="9.5" fill="#78716C">0</text>
 
-    <text x="670" y="108" text-anchor="end" class="mono" font-size="9.5" fill="#64748B">100</text>
-    <text x="670" y="150" text-anchor="end" class="mono" font-size="9.5" fill="#64748B">50</text>
-    <text x="670" y="191" text-anchor="end" class="mono" font-size="9.5" fill="#64748B">0</text>
-
-    <!-- Data points:
-         C00: 50% (x=706, y=146)
-         C01: 60% (x=790, y=137)
-         C02: 65% (x=874, y=133)
-         C03: 75% (x=958, y=125)
-         C04: 85% (x=1042, y=116)
-         Final: 60% (x=1126, y=137)
+    <!-- Points:
+         C00 50% (706, 144)
+         C01 60% (790, 136)
+         C02 65% (874, 133)
+         C03 75% (958, 125)
+         C04 85% (1042, 117)
+         Final 60% (1126, 136)
     -->
-    <path d="M 706 146 L 790 137 L 874 133 L 958 125 L 1042 116 L 1126 137 L 1126 188 L 706 188 Z" fill="url(#areaGrad)"/>
-    <path class="curve-line" d="M 706 146 L 790 137 L 874 133 L 958 125 L 1042 116 L 1126 137" fill="none" stroke="url(#curveGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    <path d="M 706 144 L 790 136 L 874 133 L 958 125 L 1042 117 L 1126 136 L 1126 182 L 706 182 Z" fill="url(#areaSand)"/>
+    <path class="curve" d="M 706 144 L 790 136 L 874 133 L 958 125 L 1042 117 L 1126 136" fill="none" stroke="#C96A4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Nodes + Value Labels -->
-    <circle cx="706" cy="146" r="4.5" fill="#38BDF8" stroke="#060A14" stroke-width="2"/>
-    <text x="706" y="135" text-anchor="middle" class="mono" font-size="9.5" fill="#94A3B8">50%</text>
-    <text x="706" y="205" text-anchor="middle" class="mono" font-size="10" fill="#94A3B8">C00</text>
+    <circle cx="706" cy="144" r="3.5" fill="#D4A373" stroke="#171411" stroke-width="1.5"/>
+    <text x="706" y="134" text-anchor="middle" class="mono" font-size="9.5" fill="#A89F91">50%</text>
+    <text x="706" y="199" text-anchor="middle" class="mono" font-size="10" fill="#78716C">C00</text>
 
-    <circle cx="790" cy="137" r="4.5" fill="#38BDF8" stroke="#060A14" stroke-width="2"/>
-    <text x="790" y="126" text-anchor="middle" class="mono" font-size="9.5" fill="#94A3B8">60%</text>
-    <text x="790" y="205" text-anchor="middle" class="mono" font-size="10" fill="#94A3B8">C01</text>
+    <circle cx="790" cy="136" r="3.5" fill="#D4A373" stroke="#171411" stroke-width="1.5"/>
+    <text x="790" y="126" text-anchor="middle" class="mono" font-size="9.5" fill="#A89F91">60%</text>
+    <text x="790" y="199" text-anchor="middle" class="mono" font-size="10" fill="#78716C">C01</text>
 
-    <circle cx="874" cy="133" r="4.5" fill="#818CF8" stroke="#060A14" stroke-width="2"/>
-    <text x="874" y="122" text-anchor="middle" class="mono" font-size="9.5" fill="#94A3B8">65%</text>
-    <text x="874" y="205" text-anchor="middle" class="mono" font-size="10" fill="#94A3B8">C02</text>
+    <circle cx="874" cy="133" r="3.5" fill="#D4A373" stroke="#171411" stroke-width="1.5"/>
+    <text x="874" y="123" text-anchor="middle" class="mono" font-size="9.5" fill="#A89F91">65%</text>
+    <text x="874" y="199" text-anchor="middle" class="mono" font-size="10" fill="#78716C">C02</text>
 
-    <circle cx="958" cy="125" r="4.5" fill="#818CF8" stroke="#060A14" stroke-width="2"/>
-    <text x="958" y="114" text-anchor="middle" class="mono" font-size="9.5" fill="#CBD5E1">75%</text>
-    <text x="958" y="205" text-anchor="middle" class="mono" font-size="10" fill="#94A3B8">C03</text>
+    <circle cx="958" cy="125" r="3.5" fill="#C96A4B" stroke="#171411" stroke-width="1.5"/>
+    <text x="958" y="115" text-anchor="middle" class="mono" font-size="9.5" fill="#E5DDD0">75%</text>
+    <text x="958" y="199" text-anchor="middle" class="mono" font-size="10" fill="#A89F91">C03</text>
 
-    <circle class="node-glow" cx="1042" cy="116" r="6" fill="#34D399" stroke="#060A14" stroke-width="2" filter="url(#glow)"/>
-    <text x="1042" y="102" text-anchor="middle" class="mono" font-size="10.5" fill="#4ADE80" font-weight="700">85%</text>
-    <text x="1042" y="205" text-anchor="middle" class="mono" font-size="10" fill="#4ADE80" font-weight="700">C04</text>
+    <circle cx="1042" cy="117" r="5" fill="#C96A4B" stroke="#F3EDE4" stroke-width="1.8"/>
+    <text x="1042" y="104" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#F3EDE4">85%</text>
+    <text x="1042" y="199" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#D4A373">C04</text>
 
-    <circle cx="1126" cy="137" r="4.5" fill="#34D399" stroke="#060A14" stroke-width="2"/>
-    <text x="1126" y="126" text-anchor="middle" class="mono" font-size="9.5" fill="#6EE7B7">60%</text>
-    <text x="1126" y="205" text-anchor="middle" class="mono" font-size="10" fill="#CBD5E1">Final</text>
+    <circle cx="1126" cy="136" r="3.5" fill="#6B8F71" stroke="#171411" stroke-width="1.5"/>
+    <text x="1126" y="126" text-anchor="middle" class="mono" font-size="9.5" fill="#6B8F71">60%</text>
+    <text x="1126" y="199" text-anchor="middle" class="mono" font-size="10" fill="#A89F91">Final</text>
 
-    <!-- Tech Stack Glass Chips (2 tidy rows) -->
-    <line x1="648" y1="224" x2="1168" y2="224" stroke="#1E293B" stroke-width="1"/>
+    <!-- Structured Technical Stack Table -->
+    <line x1="648" y1="216" x2="1164" y2="216" stroke="#2E2924" stroke-width="1"/>
 
-    <!-- Row 1 -->
-    <rect x="648" y="240" width="96" height="30" rx="8" fill="#0F172A" stroke="#334155"/>
-    <circle cx="662" cy="255" r="3.5" fill="#FACC15"/>
-    <text x="673" y="259" class="mono" font-size="11" fill="#F8FAFC">JS ES6+</text>
+    <text x="648" y="242" class="mono" font-size="10" fill="#78716C" letter-spacing="1">LANGUAGES</text>
+    <text x="742" y="242" class="sans" font-size="12" fill="#F3EDE4">JavaScript (ES6+) · C · HTML5 · CSS3 · Bash / Unix</text>
 
-    <rect x="754" y="240" width="58" height="30" rx="8" fill="#0F172A" stroke="#334155"/>
-    <circle cx="768" cy="255" r="3.5" fill="#38BDF8"/>
-    <text x="779" y="259" class="mono" font-size="11" fill="#F8FAFC">C</text>
+    <text x="648" y="272" class="mono" font-size="10" fill="#78716C" letter-spacing="1">FRAMEWORKS</text>
+    <text x="742" y="272" class="sans" font-size="12" fill="#E5DDD0">Tailwind CSS · Bootstrap 5 · Fetch API · LocalStorage</text>
 
-    <rect x="822" y="240" width="114" height="30" rx="8" fill="#0F172A" stroke="#334155"/>
-    <circle cx="836" cy="255" r="3.5" fill="#06B6D4"/>
-    <text x="847" y="259" class="mono" font-size="11" fill="#F8FAFC">Tailwind</text>
-
-    <rect x="946" y="240" width="112" height="30" rx="8" fill="#0F172A" stroke="#334155"/>
-    <circle cx="960" cy="255" r="3.5" fill="#A855F7"/>
-    <text x="971" y="259" class="mono" font-size="11" fill="#F8FAFC">Bootstrap</text>
-
-    <rect x="1068" y="240" width="100" height="30" rx="8" fill="#0F172A" stroke="#334155"/>
-    <circle cx="1082" cy="255" r="3.5" fill="#FB923C"/>
-    <text x="1093" y="259" class="mono" font-size="11" fill="#F8FAFC">HTML/CSS</text>
-
-    <!-- Row 2 -->
-    <rect x="648" y="282" width="104" height="30" rx="8" fill="#0F172A" stroke="#334155"/>
-    <circle cx="662" cy="297" r="3.5" fill="#4ADE80"/>
-    <text x="673" y="301" class="mono" font-size="11" fill="#CBD5E1">Unix/Bash</text>
-
-    <rect x="762" y="282" width="102" height="30" rx="8" fill="#0F172A" stroke="#334155"/>
-    <circle cx="776" cy="297" r="3.5" fill="#F97316"/>
-    <text x="787" y="301" class="mono" font-size="11" fill="#CBD5E1">Git Flow</text>
-
-    <rect x="874" y="282" width="106" height="30" rx="8" fill="#0F172A" stroke="#334155"/>
-    <circle cx="888" cy="297" r="3.5" fill="#818CF8"/>
-    <text x="899" y="301" class="mono" font-size="11" fill="#CBD5E1">Fetch API</text>
-
-    <rect x="990" y="282" width="84" height="30" rx="8" fill="#0F172A" stroke="#334155"/>
-    <circle cx="1004" cy="297" r="3.5" fill="#F472B6"/>
-    <text x="1015" y="301" class="mono" font-size="11" fill="#CBD5E1">Figma</text>
-
-    <rect x="1084" y="282" width="84" height="30" rx="8" fill="#0F172A" stroke="#334155"/>
-    <circle cx="1098" cy="297" r="3.5" fill="#E2E8F0"/>
-    <text x="1109" y="301" class="mono" font-size="11" fill="#CBD5E1">Vercel</text>
+    <text x="648" y="302" class="mono" font-size="10" fill="#78716C" letter-spacing="1">WORKFLOW</text>
+    <text x="742" y="302" class="sans" font-size="12" fill="#A89F91">Git Flow · Pull Requests · Agile Scrum · Figma · Vercel</text>
   </g>
 </svg>
