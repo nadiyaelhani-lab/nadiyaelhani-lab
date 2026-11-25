@@ -1,32 +1,24 @@
 <p align="center">
-  <img src="./assets/banner-3d.png" width="100%" alt="Sunlit Moroccan 3D Architectural Courtyard — Nadiya El Hani" />
+  <img src="./assets/banner-3d.png" width="100%" alt="Nadiya El Hani" />
 </p>
 
-## Nadiya El Hani
+# Hi, I'm Nadiya El Hani
 
-**Software Development Student** · YouCode Safi, Morocco · **42 Firenze Cadet** (`nael-han`)
+I'm a software development student at **YouCode Safi** in Morocco and a **42 Firenze** cadet (`nael-han`), where I finished the C Piscine and recently started the Common Core with `Libft`.
 
-I study full-stack web development at **YouCode Safi** and recently entered the **42 Firenze** Common Core after validating the C Piscine at Level 4.55. Most of my current work focuses on JavaScript (ES6+), responsive web interfaces, and low-level C fundamentals (`Libft`).
+Right now I'm building web projects with **JavaScript, HTML, CSS, Tailwind, and Bootstrap**, while strengthening my fundamentals in **C and Unix**.
 
----
+### Projects I'm working on
 
-### Selected Projects
+- **[Smart Stream TV](https://github.com/nadiyaelhani-lab/smart-stream-tv-v2)** ([live demo](https://nadiyaelhani-lab.github.io/smart-stream-tv-v2/)) — A live TV channel browser built with JavaScript, Tailwind CSS, and MockAPI, with search, favorites, and a blacklist.
+- **[AUCHAN'Co](https://github.com/nadiyaelhani-lab/AUCHAN-Project)** ([live demo](https://nadiyaelhani-lab.github.io/AUCHAN-Project/)) — An e-commerce catalog with product search, category filters, pagination, and a shopping cart *(still adding a few features)*.
+- **[Cantina](https://github.com/nadiyaelhani-lab/Cantina)** ([live demo](https://nadiyaelhani-lab.github.io/Cantina/)) — A weekly canteen menu planner for YouCode with recipe forms and a 50 DH/day budget.
+- **[Election Manager](https://github.com/nadiyaelhani-lab/finalProjectSAS)** — A Node.js terminal app for managing candidates, preventing duplicate votes by CIN, and viewing rankings.
 
-| Project | Description | Stack | Links |
-| :--- | :--- | :--- | :--- |
-| **Smart Stream TV V2** | IPTV channel manager with MockAPI CRUD, live search, favorites, and blacklist/restore flows. | JavaScript ES6+, Tailwind CSS, MockAPI | [Live Demo](https://nadiyaelhani-lab.github.io/smart-stream-tv-v2/) · [Code](https://github.com/nadiyaelhani-lab/smart-stream-tv-v2) |
-| **AUCHAN'Co** *(WIP)* | E-commerce catalog using Fetch JSON, category filtering, configurable pagination, and drag-and-drop cart foundations. | HTML5, Tailwind CSS, ES6 Modules | [Live Demo](https://nadiyaelhani-lab.github.io/AUCHAN-Project/) · [Code](https://github.com/nadiyaelhani-lab/AUCHAN-Project) |
-| **Cantina** | Weekly canteen planner for YouCode featuring modal recipe creation, live Regex validation, and a 50 DH/day budget model. | HTML5, CSS3, Bootstrap 5, JavaScript | [Live Demo](https://nadiyaelhani-lab.github.io/Cantina/) · [Vercel](https://cantina-hopeso.vercel.app) · [Code](https://github.com/nadiyaelhani-lab/Cantina) |
-| **Smart Stream IPTV (V1)** | First-iteration live TV catalog built with ES6 modules, Fetch API, and category search. | JavaScript ES6+, Tailwind CSS, MockAPI | [Live Demo](https://nadiyaelhani-lab.github.io/smart-stream-iptv/) · [Code](https://github.com/nadiyaelhani-lab/smart-stream-iptv) |
-| **Election Manager CLI** | Node.js terminal application with candidate CRUD, unique-CIN voter validation, ranking sort, and party statistics. | JavaScript, Node.js | [Code](https://github.com/nadiyaelhani-lab/finalProjectSAS) |
+### What I'm learning right now
 
-### Background & Tools
+- Building my own C library (`Libft`) at 42 Firenze
+- Writing cleaner, modular JavaScript (ES6+, Fetch API, LocalStorage)
+- Getting better at Git, pull requests, and finishing what I start
 
-- **42 Firenze (`nael-han`)** — Validated the July–August 2026 C Piscine at **Level 4.55** (9/14 modules passed, `C 04` 85%, Final Exam 60%; Unix 5.25, Algorithms 3.80, Rigor 3.00). Currently building `Libft`.
-- **YouCode Safi** — Web engineering projects structured with Git Flow (`main` / `develop` / `feature/*`), pull requests, and Agile Scrum.
-- **Core Stack** — `JavaScript (ES6+)` · `C` · `HTML5` · `CSS3` · `Tailwind CSS` · `Bootstrap 5` · `Unix / Bash` · `Git` · `Figma` · `Vercel`
-
----
-
-<sub>Header render: custom 3D ray-marched Moroccan courtyard scene written in C · [All Repositories](https://github.com/nadiyaelhani-lab?tab=repositories) · [42 Firenze](https://42firenze.it)</sub>
-<!-- Add LinkedIn when ready: · [LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE/) -->
+Thanks for stopping by — feel free to explore my repos or reach out if you'd like to collaborate.
