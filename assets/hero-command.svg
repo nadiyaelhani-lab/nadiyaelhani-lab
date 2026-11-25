@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Nadiya El Hani — Mission Control Dashboard Header">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="50%" stop-color="#090F1E"/>
+      <stop offset="100%" stop-color="#060A15"/>
+    </linearGradient>
+
+    <radialGradient id="aurora1" cx="18%" cy="22%" r="48%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.34"/>
+      <stop offset="55%" stop-color="#4F46E5" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="aurora2" cx="85%" cy="78%" r="46%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.28"/>
+      <stop offset="55%" stop-color="#0EA5E9" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="aurora3" cx="55%" cy="10%" r="36%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="52%" stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+
+    <linearGradient id="glassFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141E36" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#0B1120" stop-opacity="0.86"/>
+    </linearGradient>
+
+    <linearGradient id="borderShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="45%" stop-color="#818CF8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="55%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <linearGradient id="sparkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1" fill="#94A3B8" fill-opacity="0.14"/>
+    </pattern>
+
+    <filter id="glowSoft" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="frameClip">
+      <rect x="2" y="2" width="1196" height="336" rx="22"/>
+    </clipPath>
+  </defs>
+
+  <style><![CDATA[
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace; }
+
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.85); }
+    }
+    @keyframes blinkCursor {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes scanMove {
+      0% { transform: translateY(-20px); opacity: 0; }
+      15% { opacity: 0.7; }
+      85% { opacity: 0.7; }
+      100% { transform: translateY(340px); opacity: 0; }
+    }
+    @keyframes floatSlow {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(12px, -8px); }
+    }
+    @keyframes ringFill {
+      0% { stroke-dashoffset: 188.5; }
+      100% { stroke-dashoffset: 84.8; }
+    }
+    @keyframes drawSpark {
+      0% { stroke-dashoffset: 220; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes glowBreath {
+      0%, 100% { opacity: 0.75; }
+      50% { opacity: 1; }
+    }
+
+    .live-dot { animation: pulseDot 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .cursor { animation: blinkCursor 1.05s steps(1) infinite; }
+    .scanline { animation: scanMove 6.5s linear infinite; }
+    .orb { animation: floatSlow 9s ease-in-out infinite; }
+    .ring-arc { stroke-dasharray: 188.5; stroke-dashoffset: 84.8; animation: ringFill 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    .spark { stroke-dasharray: 220; stroke-dashoffset: 0; animation: drawSpark 2s ease-out forwards; }
+    .breath { animation: glowBreath 3.6s ease-in-out infinite; }
+  ]]></style>
+
+  <!-- Main Frame -->
+  <g clip-path="url(#frameClip)">
+    <rect x="0" y="0" width="1200" height="340" fill="url(#bgGrad)"/>
+    <rect x="0" y="0" width="1200" height="340" fill="url(#dotGrid)"/>
+    <g class="orb">
+      <rect x="0" y="0" width="1200" height="340" fill="url(#aurora1)"/>
+      <rect x="0" y="0" width="1200" height="340" fill="url(#aurora2)"/>
+      <rect x="0" y="0" width="1200" height="340" fill="url(#aurora3)"/>
+    </g>
+
+    <!-- Subtle Animated Scanline -->
+    <rect class="scanline" x="0" y="0" width="1200" height="2" fill="url(#scanGrad)"/>
+
+    <!-- Top Chrome Bar -->
+    <rect x="0" y="0" width="1200" height="44" fill="#0B1120" fill-opacity="0.72"/>
+    <line x1="0" y1="44" x2="1200" y2="44" stroke="#334155" stroke-opacity="0.55" stroke-width="1"/>
+
+    <!-- Window Dots -->
+    <circle cx="28" cy="22" r="5.5" fill="#EF4444" fill-opacity="0.9"/>
+    <circle cx="46" cy="22" r="5.5" fill="#F59E0B" fill-opacity="0.9"/>
+    <circle cx="64" cy="22" r="5.5" fill="#22C55E" fill-opacity="0.9"/>
+
+    <!-- Breadcrumb -->
+    <text x="88" y="26" class="mono" font-size="12" fill="#94A3B8">nadiyaelhani-lab</text>
+    <text x="207" y="26" class="mono" font-size="12" fill="#475569">/</text>
+    <text x="219" y="26" class="mono" font-size="12" fill="#E2E8F0" font-weight="600">command-center.os</text>
+
+    <!-- Status Pills Right -->
+    <rect x="742" y="10" width="194" height="24" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="839" y="26" text-anchor="middle" class="mono" font-size="11" fill="#CBD5E1">YOUCODE SAFI  ×  42 FIRENZE</text>
+
+    <rect x="948" y="10" width="118" height="24" rx="12" fill="#052E16" fill-opacity="0.8" stroke="#16A34A" stroke-opacity="0.6" stroke-width="1"/>
+    <circle class="live-dot" cx="964" cy="22" r="4" fill="#4ADE80" filter="url(#glowSoft)"/>
+    <text x="976" y="26" class="mono" font-size="11" fill="#86EFAC" font-weight="600">ONLINE</text>
+
+    <rect x="1078" y="10" width="98" height="24" rx="12" fill="#1E1B4B" fill-opacity="0.85" stroke="#6366F1" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="1127" y="26" text-anchor="middle" class="mono" font-size="11" fill="#C7D2FE" font-weight="600">CADET · 42</text>
+
+    <!-- LEFT SECTION: Identity + Embedded Terminal -->
+    <text x="38" y="88" class="mono" font-size="12" fill="#38BDF8" letter-spacing="2.2" font-weight="600">SOFTWARE DEVELOPER PROFILE · V2.6</text>
+    <text x="36" y="138" class="sans" font-size="44" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.8">Nadiya El Hani</text>
+    <text x="38" y="166" class="sans" font-size="14.5" fill="#94A3B8">Software Dev Student @ YouCode Safi  ·  42 Firenze Cadet (nael-han)</text>
+
+    <!-- Embedded Terminal Card -->
+    <rect x="36" y="188" width="600" height="124" rx="14" fill="url(#glassFill)" stroke="url(#borderShine)" stroke-width="1.2"/>
+    <rect x="36" y="188" width="600" height="28" rx="14" fill="#1E293B" fill-opacity="0.45"/>
+    <line x1="36" y1="216" x2="636" y2="216" stroke="#334155" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="54" y="206" class="mono" font-size="11" fill="#64748B">zsh — ~/nadiyaelhani-lab</text>
+    <text x="618" y="206" text-anchor="end" class="mono" font-size="11" fill="#38BDF8">UTF-8 · git:(main)</text>
+
+    <!-- Terminal Lines -->
+    <text x="54" y="238" class="mono" font-size="12" fill="#38BDF8">❯</text>
+    <text x="70" y="238" class="mono" font-size="12" fill="#E2E8F0">whoami --tracks</text>
+    <text x="54" y="256" class="mono" font-size="11.5" fill="#94A3B8">  web: <tspan fill="#A5F3FC">JS ES6+, Tailwind, Bootstrap, Fetch</tspan>  |  sys: <tspan fill="#C4B5FD">C, Unix, Git</tspan></text>
+
+    <text x="54" y="279" class="mono" font-size="12" fill="#38BDF8">❯</text>
+    <text x="70" y="279" class="mono" font-size="12" fill="#E2E8F0">status --focus</text>
+    <text x="54" y="297" class="mono" font-size="11.5" fill="#86EFAC">  ✓ 42 C Piscine (Lvl 4.55)   ▸ Building: 42 Libft &amp; Web Apps</text>
+    <rect class="cursor" x="492" y="286" width="8" height="14" rx="1.5" fill="#38BDF8"/>
+
+    <!-- RIGHT SECTION: 3 Glassmorphic KPI Pods -->
+
+    <!-- KPI 1: 42 Piscine Level Ring -->
+    <rect x="662" y="72" width="166" height="240" rx="16" fill="url(#glassFill)" stroke="url(#borderShine)" stroke-width="1.2"/>
+    <text x="680" y="98" class="mono" font-size="10.5" fill="#94A3B8" letter-spacing="1.2">42 FIRENZE</text>
+    <text x="680" y="114" class="sans" font-size="13" fill="#F8FAFC" font-weight="600">C Piscine Level</text>
+
+    <!-- Ring Track & Animated Arc (r=30 -> circumference=188.5, 55% progress -> offset=84.8) -->
+    <g transform="translate(745, 178)">
+      <circle cx="0" cy="0" r="38" fill="#0F172A" fill-opacity="0.7" stroke="#1E293B" stroke-width="7"/>
+      <circle class="ring-arc" cx="0" cy="0" r="30" fill="none" stroke="url(#ringGrad)" stroke-width="7" stroke-linecap="round" transform="rotate(-90)" filter="url(#glowSoft)"/>
+      <text x="0" y="5" text-anchor="middle" class="sans" font-size="22" font-weight="800" fill="#FFFFFF">4.55</text>
+      <text x="0" y="20" text-anchor="middle" class="mono" font-size="9.5" fill="#38BDF8">55% LVL 04</text>
+    </g>
+
+    <line x1="680" y1="244" x2="810" y2="244" stroke="#1E293B" stroke-width="1"/>
+    <text x="680" y="266" class="mono" font-size="11" fill="#94A3B8">C 04 Score</text>
+    <text x="810" y="266" text-anchor="end" class="mono" font-size="11.5" fill="#4ADE80" font-weight="700">85%</text>
+    <text x="680" y="288" class="mono" font-size="11" fill="#94A3B8">Final Exam</text>
+    <text x="810" y="288" text-anchor="end" class="mono" font-size="11.5" fill="#38BDF8" font-weight="700">60%</text>
+
+    <!-- KPI 2: GitHub Velocity Pod -->
+    <rect x="844" y="72" width="166" height="240" rx="16" fill="url(#glassFill)" stroke="url(#borderShine)" stroke-width="1.2"/>
+    <text x="862" y="98" class="mono" font-size="10.5" fill="#94A3B8" letter-spacing="1.2">GITHUB REPOS</text>
+    <text x="862" y="114" class="sans" font-size="13" fill="#F8FAFC" font-weight="600">Build Velocity</text>
+
+    <text x="862" y="160" class="sans" font-size="38" font-weight="800" fill="#FFFFFF">08</text>
+    <rect x="916" y="138" width="76" height="20" rx="10" fill="#064E3B" fill-opacity="0.8" stroke="#10B981" stroke-opacity="0.5"/>
+    <text x="954" y="152" text-anchor="middle" class="mono" font-size="10" fill="#6EE7B7">2 MONTHS</text>
+
+    <!-- Animated Sparkline -->
+    <g transform="translate(862, 178)">
+      <path d="M 0 44 L 22 40 L 44 32 L 66 34 L 88 20 L 110 14 L 130 6" fill="none" stroke="url(#sparkGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="spark" filter="url(#glowSoft)"/>
+      <circle cx="130" cy="6" r="4" fill="#34D399" class="live-dot"/>
+    </g>
+
+    <line x1="862" y1="244" x2="992" y2="244" stroke="#1E293B" stroke-width="1"/>
+    <text x="862" y="266" class="mono" font-size="11" fill="#94A3B8">Workflow</text>
+    <text x="992" y="266" text-anchor="end" class="mono" font-size="11" fill="#E2E8F0" font-weight="600">Git Flow</text>
+    <text x="862" y="288" class="mono" font-size="11" fill="#94A3B8">Primary</text>
+    <text x="992" y="288" text-anchor="end" class="mono" font-size="11" fill="#FDE047" font-weight="600">JS ES6+</text>
+
+    <!-- KPI 3: Live Shipments & Milestone Pod -->
+    <rect x="1026" y="72" width="144" height="240" rx="16" fill="url(#glassFill)" stroke="url(#borderShine)" stroke-width="1.2"/>
+    <text x="1042" y="98" class="mono" font-size="10.5" fill="#94A3B8" letter-spacing="1.2">DEPLOYED</text>
+    <text x="1042" y="114" class="sans" font-size="13" fill="#F8FAFC" font-weight="600">Live Apps</text>
+
+    <text x="1042" y="160" class="sans breath" font-size="38" font-weight="800" fill="#38BDF8">02</text>
+
+    <!-- Live platform tags -->
+    <rect x="1042" y="176" width="112" height="24" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-opacity="0.4"/>
+    <circle cx="1055" cy="188" r="3" fill="#38BDF8"/>
+    <text x="1065" y="192" class="mono" font-size="10" fill="#E0F2FE">GH Pages</text>
+
+    <rect x="1042" y="208" width="112" height="24" rx="8" fill="#0F172A" stroke="#A855F7" stroke-opacity="0.4"/>
+    <circle cx="1055" cy="220" r="3" fill="#C084FC"/>
+    <text x="1065" y="224" class="mono" font-size="10" fill="#F3E8FF">Vercel</text>
+
+    <line x1="1042" y1="244" x2="1154" y2="244" stroke="#1E293B" stroke-width="1"/>
+    <text x="1042" y="266" class="mono" font-size="10.5" fill="#94A3B8">Next Target</text>
+    <text x="1042" y="288" class="mono" font-size="12" fill="#C084FC" font-weight="700">42 · Libft</text>
+  </g>
+
+  <!-- Outer Crisp Glass Border -->
+  <rect x="1.5" y="1.5" width="1197" height="337" rx="22" fill="none" stroke="url(#borderShine)" stroke-width="1.5"/>
+</svg>

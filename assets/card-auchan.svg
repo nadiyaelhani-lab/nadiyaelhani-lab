@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="580" height="230" role="img" aria-label="AUCHAN'Co E-Commerce Project Card">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1718"/>
+      <stop offset="100%" stop-color="#060A13"/>
+    </linearGradient>
+    <radialGradient id="glowEmerald" cx="85%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="strokeEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.65"/>
+      <stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <style><![CDATA[
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    @keyframes dragFloat {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(8px, 6px); }
+    }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    .drag-card { animation: dragFloat 2.8s ease-in-out infinite; }
+    .wip { animation: pulse 2s ease-in-out infinite; }
+  ]]></style>
+
+  <rect x="1.5" y="1.5" width="577" height="227" rx="18" fill="url(#bg)" stroke="url(#strokeEmerald)" stroke-width="1.5"/>
+  <rect x="2" y="2" width="576" height="226" rx="18" fill="url(#glowEmerald)"/>
+
+  <!-- Status Badge -->
+  <rect x="24" y="22" width="144" height="24" rx="12" fill="#451A03" stroke="#F59E0B" stroke-opacity="0.65"/>
+  <circle class="wip" cx="38" cy="34" r="3.5" fill="#FBBF24"/>
+  <text x="48" y="38" class="mono" font-size="10.5" fill="#FDE68A" font-weight="600">IN PROGRESS · WIP</text>
+
+  <text x="556" y="38" text-anchor="end" class="mono" font-size="11" fill="#34D399">E-COMMERCE ↗</text>
+
+  <!-- Title & Desc -->
+  <text x="24" y="78" class="sans" font-size="22" font-weight="800" fill="#FFFFFF">AUCHAN'Co Storefront</text>
+  <text x="24" y="103" class="sans" font-size="12.5" fill="#94A3B8">Modular ES6 catalog with Fetch JSON, live</text>
+  <text x="24" y="122" class="sans" font-size="12.5" fill="#94A3B8">search, filters, pagination &amp; cart D&amp;D.</text>
+
+  <!-- Mini Animated Storefront UI Widget -->
+  <g transform="translate(382, 54)">
+    <rect x="0" y="0" width="174" height="104" rx="12" fill="#0B1120" stroke="#475569" stroke-opacity="0.5"/>
+    <!-- Search bar -->
+    <rect x="10" y="10" width="154" height="14" rx="4" fill="#1E293B"/>
+    <text x="18" y="20" class="mono" font-size="8" fill="#64748B">Search 20 products...</text>
+    <!-- Product Grid -->
+    <rect x="10" y="30" width="44" height="34" rx="5" fill="#132A24" stroke="#10B981" stroke-opacity="0.4"/>
+    <rect x="60" y="30" width="44" height="34" rx="5" fill="#132A24" stroke="#10B981" stroke-opacity="0.4"/>
+    <!-- Floating Drag Card -->
+    <g class="drag-card">
+      <rect x="110" y="30" width="44" height="34" rx="5" fill="#065F46" stroke="#34D399" stroke-width="1.2"/>
+      <text x="132" y="51" text-anchor="middle" class="mono" font-size="8" fill="#ECFDF5">DRAG</text>
+    </g>
+    <!-- Drop Zone -->
+    <rect x="10" y="72" width="154" height="22" rx="6" fill="#0F172A" stroke="#34D399" stroke-dasharray="4,3" stroke-opacity="0.7"/>
+    <text x="87" y="86" text-anchor="middle" class="mono" font-size="8.5" fill="#6EE7B7">CART DROP ZONE</text>
+  </g>
+
+  <!-- Tech Pills -->
+  <line x1="24" y1="172" x2="556" y2="172" stroke="#1E293B" stroke-width="1"/>
+  <rect x="24" y="186" width="96" height="24" rx="7" fill="#064E3B" stroke="#10B981" stroke-opacity="0.5"/>
+  <text x="72" y="202" text-anchor="middle" class="mono" font-size="10.5" fill="#A7F3D0">ES6 Modules</text>
+
+  <rect x="128" y="186" width="92" height="24" rx="7" fill="#083344" stroke="#06B6D4" stroke-opacity="0.5"/>
+  <text x="174" y="202" text-anchor="middle" class="mono" font-size="10.5" fill="#A5F3FC">Tailwind</text>
+
+  <rect x="228" y="186" width="76" height="24" rx="7" fill="#0F172A" stroke="#334155"/>
+  <text x="266" y="202" text-anchor="middle" class="mono" font-size="10.5" fill="#CBD5E1">JSON</text>
+
+  <rect x="312" y="186" width="92" height="24" rx="7" fill="#0F172A" stroke="#334155"/>
+  <text x="358" y="202" text-anchor="middle" class="mono" font-size="10.5" fill="#CBD5E1">Drag&amp;Drop</text>
+
+  <text x="556" y="202" text-anchor="end" class="mono" font-size="10.5" fill="#94A3B8">Click to explore →</text>
+</svg>
