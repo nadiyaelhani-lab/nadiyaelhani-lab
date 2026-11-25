@@ -2,7 +2,7 @@
 
 <!-- EDITORIAL HERO OVERVIEW -->
 <a href="https://github.com/nadiyaelhani-lab">
-  <img src="./assets/hero-command.svg" width="100%" alt="Nadiya El Hani — Software Development Overview" />
+  <img src="./assets/hero-command.svg?v=2" width="100%" alt="Nadiya El Hani — Software Development Overview" />
 </a>
 
 <p align="center">
@@ -20,7 +20,7 @@
 </p>
 
 <!-- 42 FIRENZE COMPETENCY & PROGRESSION -->
-<img src="./assets/bento-telemetry.svg" width="100%" alt="42 Firenze Competency Profile and C Piscine Progression" />
+<img src="./assets/bento-telemetry.svg?v=2" width="100%" alt="42 Firenze Competency Profile and C Piscine Progression" />
 
 <br />
 
@@ -31,7 +31,7 @@
   <tr>
     <td width="50%" align="center">
       <a href="https://github.com/nadiyaelhani-lab/smart-stream-tv-v2">
-        <img src="./assets/card-smartstream.svg" width="100%" alt="Smart Stream TV V2" />
+        <img src="./assets/card-smartstream.svg?v=2" width="100%" alt="Smart Stream TV V2" />
       </a>
       <br />
       <a href="https://nadiyaelhani-lab.github.io/smart-stream-tv-v2/">Live Demo</a> &nbsp;·&nbsp;
@@ -39,7 +39,7 @@
     </td>
     <td width="50%" align="center">
       <a href="https://github.com/nadiyaelhani-lab/AUCHAN-Project">
-        <img src="./assets/card-auchan.svg" width="100%" alt="AUCHAN'Co Storefront" />
+        <img src="./assets/card-auchan.svg?v=2" width="100%" alt="AUCHAN'Co Storefront" />
       </a>
       <br />
       <a href="https://github.com/nadiyaelhani-lab/AUCHAN-Project">Source Code</a> &nbsp;·&nbsp;
@@ -49,7 +49,7 @@
   <tr>
     <td width="50%" align="center">
       <a href="https://github.com/nadiyaelhani-lab/Cantina">
-        <img src="./assets/card-cantina.svg" width="100%" alt="Cantina Menu Planner" />
+        <img src="./assets/card-cantina.svg?v=2" width="100%" alt="Cantina Menu Planner" />
       </a>
       <br />
       <a href="https://cantina-hopeso.vercel.app">Live Demo</a> &nbsp;·&nbsp;
@@ -57,7 +57,7 @@
     </td>
     <td width="50%" align="center">
       <a href="https://github.com/nadiyaelhani-lab/finalProjectSAS">
-        <img src="./assets/card-election.svg" width="100%" alt="Election Manager CLI" />
+        <img src="./assets/card-election.svg?v=2" width="100%" alt="Election Manager CLI" />
       </a>
       <br />
       <a href="https://github.com/nadiyaelhani-lab/finalProjectSAS">Source Code</a>
@@ -89,6 +89,6 @@
 <br />
 
 <!-- EDITORIAL FOOTER -->
-<img src="./assets/footer-radar.svg" width="100%" alt="Nadiya El Hani — Footer" />
+<img src="./assets/footer-radar.svg?v=2" width="100%" alt="Nadiya El Hani — Footer" />
 
 </div>
