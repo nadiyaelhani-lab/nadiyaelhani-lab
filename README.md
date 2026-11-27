@@ -1,24 +1,39 @@
 <p align="center">
-  <img src="./assets/banner-3d.png" width="100%" alt="Nadiya El Hani" />
+  <img src="./profile-hero.jpg" width="100%" alt="A floating titanium laptop surrounded by blue-lit glass interface panels">
 </p>
 
-# Hi, I'm Nadiya El Hani
+<h1 align="center">Nadiya El Hani</h1>
+<p align="center"><strong>Software development student at YouCode Safi, Morocco</strong></p>
+<p align="center">I build responsive web interfaces and use JavaScript to turn data into things people can interact with.</p>
 
-I'm a software development student at **YouCode Safi** in Morocco and a **42 Firenze** cadet (`nael-han`), where I finished the C Piscine and recently started the Common Core with `Libft`.
+<p align="center">
+  <a href="#selected-work">Selected work</a> · <a href="#skills-and-tools">Skills and tools</a> · <a href="https://github.com/nadiyaelhani-lab?tab=repositories">All repositories</a>
+</p>
 
-Right now I'm building web projects with **JavaScript, HTML, CSS, Tailwind, and Bootstrap**, while strengthening my fundamentals in **C and Unix**.
+---
 
-### Projects I'm working on
+## Selected work
 
-- **[Smart Stream TV](https://github.com/nadiyaelhani-lab/smart-stream-tv-v2)** ([live demo](https://nadiyaelhani-lab.github.io/smart-stream-tv-v2/)) — A live TV channel browser built with JavaScript, Tailwind CSS, and MockAPI, with search, favorites, and a blacklist.
-- **[AUCHAN'Co](https://github.com/nadiyaelhani-lab/AUCHAN-Project)** ([live demo](https://nadiyaelhani-lab.github.io/AUCHAN-Project/)) — An e-commerce catalog with product search, category filters, pagination, and a shopping cart *(still adding a few features)*.
-- **[Cantina](https://github.com/nadiyaelhani-lab/Cantina)** ([live demo](https://nadiyaelhani-lab.github.io/Cantina/)) — A weekly canteen menu planner for YouCode with recipe forms and a 50 DH/day budget.
-- **[Election Manager](https://github.com/nadiyaelhani-lab/finalProjectSAS)** — A Node.js terminal app for managing candidates, preventing duplicate votes by CIN, and viewing rankings.
+### [Smart Stream TV v2 ↗](https://github.com/nadiyaelhani-lab/smart-stream-tv-v2)
 
-### What I'm learning right now
+A channel browser with search, previews, favorites, and controls to add, block, restore, and delete channels.
 
-- Building my own C library (`Libft`) at 42 Firenze
-- Writing cleaner, modular JavaScript (ES6+, Fetch API, LocalStorage)
-- Getting better at Git, pull requests, and finishing what I start
+**Built with** · JavaScript ES6+ / Tailwind CSS / MockAPI
 
-Thanks for stopping by — feel free to explore my repos or reach out if you'd like to collaborate.
+### [AUCHAN Project ↗](https://github.com/nadiyaelhani-lab/AUCHAN-Project)
+
+A shopping catalog with search, category filters, and pagination over a JSON product catalog. The cart is in development.
+
+**Built with** · HTML / Tailwind CSS / JavaScript
+
+### EcoArt
+
+A team website about creative craftsmanship. We built responsive pages and reusable interface components.
+
+**Built with** · HTML / CSS / GitHub
+
+## Skills and tools
+
+- **Front end** · HTML, CSS, JavaScript, Bootstrap, Tailwind CSS
+- **Browser and data** · DOM manipulation, Fetch API, JSON, async JavaScript
+- **Collaboration** · Git, GitHub, Agile/Scrum
